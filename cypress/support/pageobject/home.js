@@ -36,8 +36,8 @@ pesquisarLupa(){
         // cy.get(elem.lupa)
         //  .click()
     cy.get(elem.produtos)
-         .should('be.visible', 'Produtos').click({force: true})
-    cy.contains('Categoria: Produtos')
+         .should('be.visible', 'Investimentos').click({force: true})
+    cy.contains('Categoria: Investimentos')
     cy.get(elem.lupa)
         .click()
     }
