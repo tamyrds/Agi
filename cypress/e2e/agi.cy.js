@@ -25,4 +25,8 @@ import home from "../support/pageobject/home";
   it('Deve escrever no campo busca e depois apagar', () => {
       home.apagarTexto()
   });
+
+  it.only('Deve clicar em seus investimentos e depois clicar na lupa', () => {
+      home.clicarInvestimentos()
+  });
 });

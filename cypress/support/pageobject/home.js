@@ -32,6 +32,16 @@ pesquisarLupa(){
         .should('have.value', '')
     }
 
+    clicarInvestimentos(){
+        // cy.get(elem.lupa)
+        //  .click()
+    cy.get(elem.produtos)
+         .should('be.visible', 'Produtos').click({force: true})
+    cy.contains('Categoria: Produtos')
+    cy.get(elem.lupa)
+        .click()
+    }
+
 }
 
 export default new home
