@@ -22,6 +22,16 @@ pesquisarLupa(){
     cy.should('be.visible', 'Resultados da busca por: Black Friday')
 }
 
+    apagarTexto(){
+        cy.get(elem.lupa)
+        .click()
+    cy.get(elem.pesquisar)
+        .click()
+        .type('Black Friday')
+        .clear()
+        .should('have.value', '')
+    }
+
 }
 
 export default new home

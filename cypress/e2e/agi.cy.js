@@ -21,4 +21,8 @@ import home from "../support/pageobject/home";
   it('Deve realizar uma pesquisa por black friday', () => {
       home.pesquisarLupa()
   });
+
+  it('Deve escrever no campo busca e depois apagar', () => {
+      home.apagarTexto()
+  });
 });
