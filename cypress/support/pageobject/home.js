@@ -33,9 +33,13 @@ pesquisarLupa(){
     }
 
     clicarInvestimentos(){
-        cy.get(elem.lupa)
+        // cy.get(elem.lupa)
+        //  .click()
+    cy.get(elem.produtos)
+         .should('be.visible', 'Produtos').click({force: true})
+    cy.contains('Categoria: Produtos')
+    cy.get(elem.lupa)
         .click()
-        cy.contains('Produtos').click()
     }
 
 }
