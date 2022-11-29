@@ -33,8 +33,6 @@ pesquisarLupa(){
     }
 
     clicarInvestimentos(){
-        // cy.get(elem.lupa)
-        //  .click()
     cy.get(elem.produtos)
          .should('be.visible', 'Investimentos').click({force: true})
     cy.contains('Categoria: Investimentos')
