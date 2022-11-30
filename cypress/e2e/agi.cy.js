@@ -26,7 +26,7 @@ import home from "../support/pageobject/home";
       home.apagarTexto()
   });
 
-  it.only('Deve clicar em seus investimentos e depois clicar na lupa', () => {
-      home.clicarInvestimentos()
-  });
+  // it('Deve clicar em seus investimentos e depois clicar na lupa', () => {
+  //     home.clicarInvestimentos()
+  // });
 });
